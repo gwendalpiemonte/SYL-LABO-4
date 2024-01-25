@@ -2,6 +2,34 @@
 
 ## Analyse des entrées/sorties
 
+Le circuit d'origine comporte les entrées suivantes : `ready_i`, `color_i`, `clk_i`, et `reset_i`.
+
+- `ready_i` : Arrive uniquement lorsque le bras est en position initiale, signalant qu'il est prêt à effectuer le scan d'une boîte.
+- `color_i` : Arrive après qu'un scan a été effectué et définit la couleur de la boîte.
+- `clk_i` : Signal d'horloge.
+- `reset_i` : Réinitialisation asynchrone de l'ensemble du système.
+
+Voici la table de vérité de color :
+| Color Val | Signification           |
+|-----------|-------------------------|
+| 00        | Couleur indéterminée    |
+| 01        | Rouge                   |
+| 10        | Bleu                    |
+| 11        | Erreur                  |
+
+Ces entrées à elles seules ne permettent pas de réaliser tous les changements d'états comme requis. Pour cela, un compteur est nécessaire, générant la valeur 'compteur_done', qui indique si le bras a terminé son déplacement, car celui-ci prend 3 cycles d'horloge pour s'achever. Ce compteur renvoie la valeur 1 lorsqu'il atteint 1.
+
+Les sorties correspondent simplement à la prochaine action à effectuer, c'est-à-dire le prochain état de la machine.
+- `scan_o` : 1 lorsque la prochaine action est de scanner une pièce.
+- `throw_o` : 1 lorsque le scan a produit la valeur 00, indiquant une couleur indéterminée.
+- `move_o` : 1 lorsque le bras doit se déplacer, et cette sortie est activée simultanément avec la sortie définissant la destination de son déplacement.
+- `dest_red_o` : 1 en même temps que `move_o` pour se déplacer vers la zone rouge.
+- `dest_blue_o` : 1 en même temps que `move_o` pour se déplacer vers la zone bleue.
+- `dest_init_o` : 1 en même temps que `move_o` pour se déplacer vers la zone initiale.
+- `drop_o` : 1 lorsque le bras atteint la zone bleue/rouge et doit relâcher la pièce qu'il tient.
+
+Étant donné que le bras fonctionne comme une machine d'état séquentielle de Moore, les sorties dépendent uniquement de l'état actuel et non des entrées.
+
 ## Élaboration du graphe des états
 Selon les comportements suivants du bras :
 

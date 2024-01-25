@@ -20,7 +20,7 @@ Voici la table de vérité de color :
 Ces entrées à elles seules ne permettent pas de réaliser tous les changements d'états comme requis. Pour cela, un compteur est nécessaire, générant la valeur 'compteur_done', qui indique si le bras a terminé son déplacement, car celui-ci prend 3 cycles d'horloge pour s'achever. Ce compteur renvoie la valeur 1 lorsqu'il atteint 1.
 
 Les sorties correspondent simplement à la prochaine action à effectuer, c'est-à-dire le prochain état de la machine.
-- `scan_o` : 1 lorsque la prochaine action est de scanner une pièce.
+- `scan_o` : est à 1 si le système est pret a scanner une forme.
 - `throw_o` : 1 lorsque le scan a produit la valeur 00, indiquant une couleur indéterminée.
 - `move_o` : 1 lorsque le bras doit se déplacer, et cette sortie est activée simultanément avec la sortie définissant la destination de son déplacement.
 - `dest_red_o` : 1 en même temps que `move_o` pour se déplacer vers la zone rouge.
@@ -74,7 +74,7 @@ Il nous a été possible d'élaborer un graphe d'état que voici.
 
 ## Table des états
 
-## Equations de sortie
+## Equations des états furures et sorties
 
 $$Wait^+ = Wait * \overline{ready} + Unknow * timer + ResetPos * timer$$
 $$ScanColor^+ = Wait * ready + ScanColor * color0 * color1$$

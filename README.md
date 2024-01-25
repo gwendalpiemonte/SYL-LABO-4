@@ -48,3 +48,5 @@ Il nous a été possible d'élaborer un graphe d'état que voici.
 
 ## Equations de sortie
 
+$$Wait^+ = Wait * \overline{ready} + Unknow * timer + ResetPos * timer$$
+

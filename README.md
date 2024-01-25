@@ -49,4 +49,6 @@ Il nous a été possible d'élaborer un graphe d'état que voici.
 ## Equations de sortie
 
 $$Wait^+ = Wait * \overline{ready} + Unknow * timer + ResetPos * timer$$
+$$ScanColor^+ = Wait * ready + ScanColor * color0 * color1$$
+$$Unknow^+ = ScanColor * \overline{color0} * \overline{color1}$$
 

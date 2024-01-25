@@ -78,8 +78,16 @@ Voici la table des étas du système:
 <img src="/TableEtats.png" width="1000"/>
 
 ## Equations des états furures et sorties
+Ces équations ont pu être déduites de la table des états.
 
-$$Wait^+ = Wait * \overline{ready} + Unknow * timer + ResetPos * timer$$
-$$ScanColor^+ = Wait * ready + ScanColor * color0 * color1$$
-$$Unknow^+ = ScanColor * \overline{color0} * \overline{color1}$$
+| Équation états future  | Expression                                                                       |
+|------------------------|----------------------------------------------------------------------------------|
+| $$Wait^+$$             | $$Wait \cdot \overline{ready} +  ResetPos \cdot timer + Unknow$$                 |
+| $$ScanColor^+$$        | $$Wait \cdot ready + ScanColor \cdot color0 \cdot color1$$                       |
+| $$Unknow^+$$           | $$ScanColor \cdot \overline{color0} \cdot \overline{color1}$$                    | 
+| $$Blue^+$$             | $$Blue \cdot \overline{timer} + ScanColor \cdot color0 \cdot \overline{color1}$$ |
+| $$Red^+$$              | $$Red \cdot \overline{timer} + ScanColor \cdot \overline{color0} \cdot color1$$  |
+| $$Drop^+$$             | $$Blue \cdot timer + Red \cdot timer$$                                           |
+| $$ResetPos^+$$         | $$ResetPos \cdot \overline{timer} + Drop$$                                       |
+
 

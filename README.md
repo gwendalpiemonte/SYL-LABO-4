@@ -19,7 +19,7 @@ Il nous a été possible d'élaborer un graphe d'état que voici.
 
 1. **Wait :**
    - Attente de l'arrivée d'une pièce devant le bras.
-   - Dès que le capteur de détection (ready_i) détecte une pièce, passer à l'état suivant.
+   - Dès que le capteur de détection (ready_i) détecte une pièce, passer à l'état ScanColor.
 
 2. **ScanColor :**
    - Mettre le signal scan_o à '1' pour permettre la détection de la couleur.

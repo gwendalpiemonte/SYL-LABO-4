@@ -45,7 +45,7 @@ Selon les comportements suivants du bras :
 
 Il nous a été possible d'élaborer un graphe d'état que voici.
 
-<img src="/StateGraph.drawio.png" width="1000"/>
+<img src="/GraphEtats.drawio.png" width="1000"/>
 
 1. **Wait :**
    - Attente de l'arrivée d'une pièce devant le bras.

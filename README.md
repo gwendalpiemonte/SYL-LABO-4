@@ -75,7 +75,7 @@ Il nous a été possible d'élaborer un graphe d'état que voici.
 ## Table des états
 Voici la table des étas du système:
 
-<img src="" width="1000"/>
+<img src="/TableEtats.png" width="1000"/>
 
 ## Equations des états furures et sorties
 

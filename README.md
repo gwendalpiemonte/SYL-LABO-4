@@ -41,5 +41,3 @@ Il nous a été possible d'élaborer un graphe d'état que voici.
 6. **ResetPos :**
    - Retourner à l'état initial en prenant en compte le temps de déplacement du bras.
 
-Ce schéma des états décrit le fonctionnement du bras en réponse aux différents événements et conditions spécifiés.
-

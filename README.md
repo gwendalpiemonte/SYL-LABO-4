@@ -1,5 +1,7 @@
 # Labo 4 SYL Bras robot G.Piemontesi - G.Trueb
 
+## Analyse des entrées/sorties
+
 ## Élaboration du graphe des états
 Selon les comportements suivants du bras :
 
@@ -40,4 +42,9 @@ Il nous a été possible d'élaborer un graphe d'état que voici.
 
 6. **ResetPos :**
    - Retourner à l'état initial en prenant en compte le temps de déplacement du bras.
+
+
+## Table des états
+
+## Equations de sortie
 

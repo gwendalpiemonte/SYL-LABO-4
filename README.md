@@ -15,3 +15,5 @@ Selon les comportements suivants du bras :
 
 Il nous a été possible d'élaborer un graphe d'état que voici.
 
+<img src="/BDR/images/typeentite.PNG" width="700"/>
+

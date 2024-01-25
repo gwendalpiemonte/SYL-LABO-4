@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project integrity="0f29a335f374122297a29d91edae9a6b69227e6f" source="2.16.8.t" version="1.0">
+<project integrity="87027c85a470c1f26f014c232419a34821f63399" source="2.16.8.t" version="1.0">
   This file is intended to be loaded by Logisim-evolution (https://github.com/reds-heig/logisim-evolution).
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
-      <a name="fanout" val="8"/>
-      <a name="date" val="07.12.15 17:00:34"/>
+      <a name="incoming" val="8"/>
+      <a name="date" val="04.11.16 16:09:15"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="1"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="1"/>
     </tool>
     <tool name="Pin">
-      <a name="owner" val="autogen:gaetan_matthey"/>
-      <a name="date" val="04.08.16 11:48:36"/>
-      <a name="version" val="2.10.1"/>
-      <a name="uuid" val="dab28831-6c47-439b-bdbf-eb31903cedb8"/>
-      <a name="integrity" val="1c556c37ef5d3f5a0e5bc32a4a9d3a5e8008f467"/>
+      <a name="output" val="true"/>
+      <a name="label" val="C_out"/>
+      <a name="date" val="04.11.16 16:09:15"/>
     </tool>
     <tool name="Probe">
       <a name="facing" val="west"/>
@@ -30,8 +35,7 @@
       <a name="integrity" val="835cd60b73ff0ed0e6f0bfa41aeb9d77093707a5"/>
     </tool>
     <tool name="Constant">
-      <a name="width" val="20"/>
-      <a name="value" val="0xfffff"/>
+      <a name="value" val="0x0"/>
     </tool>
   </lib>
   <lib desc="#Gates" name="1"/>
@@ -792,43 +796,136 @@ end TCL_Generic;
     <a name="clabelfont" val="SansSerif bold 12"/>
     <a name="circuitnamedbox" val="true"/>
     <a name="circuitvhdlpath" val=""/>
-    <wire from="(550,430)" to="(670,430)"/>
-    <wire from="(590,220)" to="(640,220)"/>
-    <wire from="(620,340)" to="(670,340)"/>
-    <wire from="(590,210)" to="(650,210)"/>
-    <wire from="(610,370)" to="(670,370)"/>
-    <wire from="(590,230)" to="(630,230)"/>
-    <wire from="(630,310)" to="(670,310)"/>
-    <wire from="(500,400)" to="(670,400)"/>
-    <wire from="(630,230)" to="(630,310)"/>
-    <wire from="(550,440)" to="(660,440)"/>
-    <wire from="(660,200)" to="(660,220)"/>
-    <wire from="(660,440)" to="(660,460)"/>
-    <wire from="(650,210)" to="(650,250)"/>
-    <wire from="(550,260)" to="(570,260)"/>
-    <wire from="(650,250)" to="(670,250)"/>
-    <wire from="(590,250)" to="(610,250)"/>
-    <wire from="(500,450)" to="(530,450)"/>
-    <wire from="(1160,180)" to="(1170,180)"/>
-    <wire from="(640,280)" to="(670,280)"/>
-    <wire from="(590,240)" to="(620,240)"/>
-    <wire from="(620,240)" to="(620,340)"/>
-    <wire from="(610,250)" to="(610,370)"/>
-    <wire from="(590,200)" to="(660,200)"/>
-    <wire from="(640,220)" to="(640,280)"/>
-    <wire from="(590,190)" to="(670,190)"/>
-    <wire from="(660,220)" to="(670,220)"/>
-    <wire from="(660,460)" to="(670,460)"/>
-    <comp lib="0" loc="(550,260)" name="Pin">
-      <a name="width" val="7"/>
-      <a name="label" val="etat_actuel"/>
-      <a name="owner" val="gwendal_piemonte"/>
-      <a name="date" val="23.01.24 19:07:54"/>
-      <a name="version" val="2.16.8.t"/>
-      <a name="uuid" val="8f8de1b0-1d6a-4ccd-8b06-57f116e637dc"/>
-      <a name="integrity" val="b12439e8ff1c373f7aaa4bd45b3d803e16bf8f31"/>
+    <wire from="(370,320)" to="(430,320)"/>
+    <wire from="(670,140)" to="(730,140)"/>
+    <wire from="(670,200)" to="(710,200)"/>
+    <wire from="(710,280)" to="(750,280)"/>
+    <wire from="(1050,440)" to="(1110,440)"/>
+    <wire from="(1050,400)" to="(1110,400)"/>
+    <wire from="(1050,720)" to="(1110,720)"/>
+    <wire from="(1050,520)" to="(1110,520)"/>
+    <wire from="(390,180)" to="(390,260)"/>
+    <wire from="(1160,230)" to="(1220,230)"/>
+    <wire from="(1160,610)" to="(1300,610)"/>
+    <wire from="(260,400)" to="(290,400)"/>
+    <wire from="(670,260)" to="(690,260)"/>
+    <wire from="(1160,1130)" to="(1300,1130)"/>
+    <wire from="(1100,740)" to="(1110,740)"/>
+    <wire from="(410,200)" to="(430,200)"/>
+    <wire from="(1040,1110)" to="(1110,1110)"/>
+    <wire from="(1040,1150)" to="(1110,1150)"/>
+    <wire from="(1190,150)" to="(1190,210)"/>
+    <wire from="(680,310)" to="(750,310)"/>
+    <wire from="(1190,250)" to="(1220,250)"/>
+    <wire from="(1190,210)" to="(1220,210)"/>
+    <wire from="(1160,1020)" to="(1190,1020)"/>
+    <wire from="(1160,940)" to="(1190,940)"/>
+    <wire from="(1080,700)" to="(1110,700)"/>
+    <wire from="(1160,500)" to="(1190,500)"/>
+    <wire from="(1160,420)" to="(1190,420)"/>
+    <wire from="(370,200)" to="(370,320)"/>
+    <wire from="(770,250)" to="(780,250)"/>
+    <wire from="(580,500)" to="(590,500)"/>
+    <wire from="(280,480)" to="(340,480)"/>
+    <wire from="(1190,480)" to="(1190,500)"/>
+    <wire from="(1190,1000)" to="(1190,1020)"/>
+    <wire from="(1070,210)" to="(1110,210)"/>
+    <wire from="(310,380)" to="(430,380)"/>
+    <wire from="(420,150)" to="(420,170)"/>
+    <wire from="(420,390)" to="(420,410)"/>
+    <wire from="(1050,250)" to="(1110,250)"/>
+    <wire from="(1050,330)" to="(1110,330)"/>
+    <wire from="(1050,850)" to="(1110,850)"/>
+    <wire from="(310,390)" to="(420,390)"/>
+    <wire from="(680,290)" to="(680,310)"/>
+    <wire from="(690,260)" to="(690,300)"/>
+    <wire from="(400,230)" to="(430,230)"/>
+    <wire from="(1100,630)" to="(1110,630)"/>
+    <wire from="(1100,830)" to="(1110,830)"/>
+    <wire from="(320,520)" to="(340,520)"/>
+    <wire from="(720,270)" to="(750,270)"/>
+    <wire from="(1040,920)" to="(1110,920)"/>
+    <wire from="(1040,1000)" to="(1110,1000)"/>
+    <wire from="(1270,460)" to="(1300,460)"/>
+    <wire from="(1270,980)" to="(1300,980)"/>
+    <wire from="(1080,590)" to="(1110,590)"/>
+    <wire from="(1160,150)" to="(1190,150)"/>
+    <wire from="(1160,310)" to="(1190,310)"/>
+    <wire from="(350,140)" to="(430,140)"/>
+    <wire from="(700,230)" to="(700,290)"/>
+    <wire from="(400,170)" to="(400,230)"/>
+    <wire from="(1050,610)" to="(1070,610)"/>
+    <wire from="(350,150)" to="(420,150)"/>
+    <wire from="(350,160)" to="(410,160)"/>
+    <wire from="(670,170)" to="(720,170)"/>
+    <wire from="(350,170)" to="(400,170)"/>
+    <wire from="(270,550)" to="(390,550)"/>
+    <wire from="(690,300)" to="(750,300)"/>
+    <wire from="(1050,500)" to="(1110,500)"/>
+    <wire from="(710,200)" to="(710,280)"/>
+    <wire from="(350,180)" to="(390,180)"/>
+    <wire from="(390,260)" to="(430,260)"/>
+    <wire from="(390,540)" to="(430,540)"/>
+    <wire from="(380,190)" to="(380,290)"/>
+    <wire from="(1160,830)" to="(1300,830)"/>
+    <wire from="(350,190)" to="(380,190)"/>
+    <wire from="(730,260)" to="(750,260)"/>
+    <wire from="(670,230)" to="(700,230)"/>
+    <wire from="(350,200)" to="(370,200)"/>
+    <wire from="(410,500)" to="(430,500)"/>
+    <wire from="(720,170)" to="(720,270)"/>
+    <wire from="(1190,250)" to="(1190,310)"/>
+    <wire from="(420,520)" to="(430,520)"/>
+    <wire from="(420,560)" to="(430,560)"/>
+    <wire from="(1270,230)" to="(1300,230)"/>
+    <wire from="(1080,480)" to="(1110,480)"/>
+    <wire from="(730,140)" to="(730,260)"/>
+    <wire from="(670,290)" to="(680,290)"/>
+    <wire from="(1050,740)" to="(1070,740)"/>
+    <wire from="(280,500)" to="(340,500)"/>
+    <wire from="(700,290)" to="(750,290)"/>
+    <wire from="(1190,420)" to="(1190,440)"/>
+    <wire from="(1190,940)" to="(1190,960)"/>
+    <wire from="(380,290)" to="(430,290)"/>
+    <wire from="(390,540)" to="(390,550)"/>
+    <wire from="(260,350)" to="(430,350)"/>
+    <wire from="(1060,130)" to="(1110,130)"/>
+    <wire from="(1030,960)" to="(1110,960)"/>
+    <wire from="(1030,1040)" to="(1110,1040)"/>
+    <wire from="(1160,720)" to="(1300,720)"/>
+    <wire from="(1100,170)" to="(1110,170)"/>
+    <wire from="(1100,610)" to="(1110,610)"/>
+    <wire from="(1060,170)" to="(1070,170)"/>
+    <wire from="(310,210)" to="(330,210)"/>
+    <wire from="(410,160)" to="(410,200)"/>
+    <wire from="(420,170)" to="(430,170)"/>
+    <wire from="(420,410)" to="(430,410)"/>
+    <wire from="(1190,480)" to="(1220,480)"/>
+    <wire from="(1190,440)" to="(1220,440)"/>
+    <wire from="(1190,1000)" to="(1220,1000)"/>
+    <wire from="(1190,960)" to="(1220,960)"/>
+    <wire from="(1080,290)" to="(1110,290)"/>
+    <wire from="(1080,810)" to="(1110,810)"/>
+    <wire from="(670,320)" to="(750,320)"/>
+    <wire from="(1050,630)" to="(1070,630)"/>
+    <wire from="(1050,830)" to="(1070,830)"/>
+    <comp lib="0" loc="(430,170)" name="Tunnel">
+      <a name="label" val="Drop"/>
     </comp>
-    <comp lib="0" loc="(570,260)" name="Splitter">
+    <comp lib="0" loc="(430,260)" name="Tunnel">
+      <a name="label" val="Unknow"/>
+    </comp>
+    <comp lib="0" loc="(290,400)" name="Splitter">
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="23.01.24 22:47:51"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="2da7fa94-f753-4011-86a6-c526c0f52442"/>
+      <a name="integrity" val="342fdf2d4fff6c05ed318182693a4609ee9cab0b"/>
+    </comp>
+    <comp lib="0" loc="(430,290)" name="Tunnel">
+      <a name="label" val="ScanColor"/>
+    </comp>
+    <comp lib="0" loc="(330,210)" name="Splitter">
       <a name="fanout" val="7"/>
       <a name="incoming" val="7"/>
       <a name="owner" val="gwendal_piemonte"/>
@@ -837,31 +934,10 @@ end TCL_Generic;
       <a name="uuid" val="a2f5efeb-7c74-4636-9a0f-f0aca954873a"/>
       <a name="integrity" val="b39f5c23d4de28bd0bab21f1edb44ffaace5f6d2"/>
     </comp>
-    <comp lib="0" loc="(670,250)" name="Tunnel">
-      <a name="label" val="Red"/>
-    </comp>
-    <comp lib="0" loc="(670,280)" name="Tunnel">
+    <comp lib="0" loc="(430,230)" name="Tunnel">
       <a name="label" val="Blue"/>
     </comp>
-    <comp lib="0" loc="(670,370)" name="Tunnel">
-      <a name="label" val="Wait_"/>
-    </comp>
-    <comp lib="0" loc="(670,220)" name="Tunnel">
-      <a name="label" val="Drop"/>
-    </comp>
-    <comp lib="0" loc="(670,340)" name="Tunnel">
-      <a name="label" val="ScanColor"/>
-    </comp>
-    <comp lib="0" loc="(670,310)" name="Tunnel">
-      <a name="label" val="Unknow"/>
-    </comp>
-    <comp lib="0" loc="(670,190)" name="Tunnel">
-      <a name="label" val="ResetPos"/>
-    </comp>
-    <comp lib="0" loc="(670,460)" name="Tunnel">
-      <a name="label" val="color1"/>
-    </comp>
-    <comp lib="0" loc="(500,450)" name="Pin">
+    <comp lib="0" loc="(260,400)" name="Pin">
       <a name="width" val="2"/>
       <a name="label" val="color_i"/>
       <a name="owner" val="gwendal_piemonte"/>
@@ -870,10 +946,28 @@ end TCL_Generic;
       <a name="uuid" val="c751853b-dc00-4384-9c0d-6de704158488"/>
       <a name="integrity" val="d366146a78587394406aff5589a9797421eb3faf"/>
     </comp>
-    <comp lib="0" loc="(670,400)" name="Tunnel">
+    <comp lib="0" loc="(310,210)" name="Pin">
+      <a name="width" val="7"/>
+      <a name="label" val="etat_actuel"/>
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="23.01.24 19:07:54"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="8f8de1b0-1d6a-4ccd-8b06-57f116e637dc"/>
+      <a name="integrity" val="b12439e8ff1c373f7aaa4bd45b3d803e16bf8f31"/>
+    </comp>
+    <comp lib="0" loc="(430,200)" name="Tunnel">
+      <a name="label" val="Red"/>
+    </comp>
+    <comp lib="0" loc="(430,350)" name="Tunnel">
       <a name="label" val="ready"/>
     </comp>
-    <comp lib="0" loc="(500,400)" name="Pin">
+    <comp lib="0" loc="(430,410)" name="Tunnel">
+      <a name="label" val="color1"/>
+    </comp>
+    <comp lib="0" loc="(430,140)" name="Tunnel">
+      <a name="label" val="ResetPos"/>
+    </comp>
+    <comp lib="0" loc="(260,350)" name="Pin">
       <a name="label" val="ready_i"/>
       <a name="owner" val="gwendal_piemonte"/>
       <a name="date" val="23.01.24 22:27:35"/>
@@ -881,17 +975,79 @@ end TCL_Generic;
       <a name="uuid" val="79c90e03-5c23-4c7e-b6bf-65af86177fd6"/>
       <a name="integrity" val="51ab1481ab6b486a8e5c39545b2f16d7ec676622"/>
     </comp>
-    <comp lib="0" loc="(530,450)" name="Splitter">
-      <a name="owner" val="gwendal_piemonte"/>
-      <a name="date" val="23.01.24 22:47:51"/>
-      <a name="version" val="2.16.8.t"/>
-      <a name="uuid" val="2da7fa94-f753-4011-86a6-c526c0f52442"/>
-      <a name="integrity" val="342fdf2d4fff6c05ed318182693a4609ee9cab0b"/>
+    <comp lib="0" loc="(430,320)" name="Tunnel">
+      <a name="label" val="Wait_"/>
     </comp>
-    <comp lib="0" loc="(670,430)" name="Tunnel">
+    <comp lib="0" loc="(430,380)" name="Tunnel">
       <a name="label" val="color0"/>
     </comp>
-    <comp lib="0" loc="(1170,180)" name="Pin">
+    <comp lib="1" loc="(410,500)" name="XNOR Gate">
+      <a name="inputs" val="3"/>
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="25.01.24 12:42:10"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="5186fa78-d008-4eca-951e-c0d4bdd5d535"/>
+      <a name="integrity" val="7e41ae5dda33c67074c95576eb43e04a1baf85f3"/>
+    </comp>
+    <comp lib="0" loc="(270,550)" name="Pin">
+      <a name="label" val="clk_i"/>
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="25.01.24 12:43:21"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="4989354f-a884-4a05-8c18-c54ea5dd37a3"/>
+      <a name="integrity" val="ae967635d71d8cc7acc36e2f845ea1805625ee67"/>
+    </comp>
+    <comp lib="0" loc="(280,500)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Red"/>
+    </comp>
+    <comp lib="0" loc="(280,480)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Blue"/>
+    </comp>
+    <comp lib="0" loc="(320,520)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="ResetPos"/>
+    </comp>
+    <comp lib="0" loc="(420,560)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(590,500)" name="Tunnel">
+      <a name="label" val="timer"/>
+    </comp>
+    <comp lib="0" loc="(420,520)" name="Constant"/>
+    <comp loc="(580,500)" name="timer"/>
+    <comp lib="0" loc="(670,260)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="UnknowNext"/>
+    </comp>
+    <comp lib="0" loc="(670,170)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="DropNext"/>
+    </comp>
+    <comp lib="0" loc="(670,230)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="BlueNext"/>
+    </comp>
+    <comp lib="0" loc="(770,250)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="7"/>
+      <a name="incoming" val="7"/>
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="23.01.24 19:08:22"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="5bab337e-e82b-490f-bf84-e3ee5086ec20"/>
+      <a name="integrity" val="d581f3d85a5a0ece740b16160b9f3dc686ed0be1"/>
+    </comp>
+    <comp lib="0" loc="(670,290)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="ScanColorNext"/>
+    </comp>
+    <comp lib="0" loc="(670,200)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="RedNext"/>
+    </comp>
+    <comp lib="0" loc="(780,250)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="width" val="7"/>
@@ -903,15 +1059,276 @@ end TCL_Generic;
       <a name="uuid" val="96fb8824-01cd-48db-bc78-f483332e635c"/>
       <a name="integrity" val="130bb1698c47d3768e1ea333723d295e001e23f8"/>
     </comp>
-    <comp lib="0" loc="(1160,180)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="7"/>
-      <a name="incoming" val="7"/>
+    <comp lib="0" loc="(670,140)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="ResetPosNext"/>
+    </comp>
+    <comp lib="0" loc="(670,320)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="WaitNext"/>
+    </comp>
+    <comp lib="0" loc="(1300,980)" name="Tunnel">
+      <a name="label" val="DropNext"/>
+    </comp>
+    <comp lib="1" loc="(1160,720)" name="AND Gate">
+      <a name="inputs" val="3"/>
       <a name="owner" val="gwendal_piemonte"/>
-      <a name="date" val="23.01.24 19:08:22"/>
+      <a name="date" val="25.01.24 12:46:45"/>
       <a name="version" val="2.16.8.t"/>
-      <a name="uuid" val="5bab337e-e82b-490f-bf84-e3ee5086ec20"/>
-      <a name="integrity" val="d581f3d85a5a0ece740b16160b9f3dc686ed0be1"/>
+      <a name="uuid" val="e92d2675-b08c-443c-8121-23c1f07add32"/>
+      <a name="integrity" val="bf1449a638f47a9bc8a7a102a67cebbf770b3469"/>
+    </comp>
+    <comp lib="1" loc="(1160,610)" name="AND Gate">
+      <a name="inputs" val="3"/>
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="25.01.24 12:46:45"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="14f9d8e1-be26-4b4b-96c8-97f3b7d03165"/>
+      <a name="integrity" val="4ef06824b89b03c880bc9265b51c9137467e85b2"/>
+    </comp>
+    <comp lib="1" loc="(1160,420)" name="AND Gate">
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="25.01.24 12:46:45"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="45c91b81-dae2-4463-b47d-a1f9bf677fc6"/>
+      <a name="integrity" val="17170074efdc645b86c6cdb7162517e6d13fa543"/>
+    </comp>
+    <comp lib="0" loc="(1040,1110)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="timer"/>
+    </comp>
+    <comp lib="0" loc="(1050,440)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="ready"/>
+    </comp>
+    <comp lib="0" loc="(1050,630)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="color1"/>
+    </comp>
+    <comp lib="1" loc="(1160,1130)" name="AND Gate">
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="25.01.24 12:46:45"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="67892801-67e5-4380-a212-06540d1497a6"/>
+      <a name="integrity" val="3d50fbd08128a63384dae3437e647debd1d49db2"/>
+    </comp>
+    <comp lib="0" loc="(1300,1130)" name="Tunnel">
+      <a name="label" val="ResetPosNext"/>
+    </comp>
+    <comp lib="0" loc="(1030,1040)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Red"/>
+    </comp>
+    <comp lib="0" loc="(1040,1150)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Drop"/>
+    </comp>
+    <comp lib="1" loc="(1100,740)" name="NOT Gate">
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="25.01.24 12:46:02"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="0807f9cd-67a1-4a29-9419-05add13daa87"/>
+      <a name="integrity" val="3a2f92f73ea2ee6145bc5db37741661a440be1c0"/>
+    </comp>
+    <comp lib="0" loc="(1300,830)" name="Tunnel">
+      <a name="label" val="RedNext"/>
+    </comp>
+    <comp lib="1" loc="(1160,1020)" name="AND Gate">
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="25.01.24 12:46:45"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="d16a9363-3a7a-4c30-9c4f-4ccb8bbe918d"/>
+      <a name="integrity" val="e5ff2e1a14250cea2d535fda8493c3eb6cd6309d"/>
+    </comp>
+    <comp lib="0" loc="(1050,250)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="timer"/>
+    </comp>
+    <comp lib="1" loc="(1100,630)" name="NOT Gate">
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="25.01.24 12:46:02"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="78aeb2b2-7c2b-4d9b-af0e-67704798fa9e"/>
+      <a name="integrity" val="c74672092b5316d11063f04d1f88041a6992ebf4"/>
+    </comp>
+    <comp lib="0" loc="(1080,290)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="ResetPos"/>
+    </comp>
+    <comp lib="0" loc="(1060,130)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Wait_"/>
+    </comp>
+    <comp lib="0" loc="(1080,480)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="ScanColor"/>
+    </comp>
+    <comp lib="1" loc="(1100,610)" name="NOT Gate">
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="25.01.24 12:46:02"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="78aeb2b2-7c2b-4d9b-af0e-67704798fa9e"/>
+      <a name="integrity" val="c74672092b5316d11063f04d1f88041a6992ebf4"/>
+    </comp>
+    <comp lib="1" loc="(1160,940)" name="AND Gate">
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="25.01.24 12:46:45"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="d16a9363-3a7a-4c30-9c4f-4ccb8bbe918d"/>
+      <a name="integrity" val="e5ff2e1a14250cea2d535fda8493c3eb6cd6309d"/>
+    </comp>
+    <comp lib="1" loc="(1270,460)" name="OR Gate">
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="25.01.24 12:52:30"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="15f158d2-65c0-450c-80ca-8edf611d9f57"/>
+      <a name="integrity" val="707753d4fcf556b7a9ee80f3a3ab4226c51bc40a"/>
+    </comp>
+    <comp lib="1" loc="(1270,230)" name="OR Gate">
+      <a name="inputs" val="3"/>
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="25.01.24 12:47:14"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="32b8d402-e5ac-47cf-a48a-a9bb69674b1b"/>
+      <a name="integrity" val="2819ab0d84e46de2ff9d3b3e1fbfabce4eb738e9"/>
+    </comp>
+    <comp lib="0" loc="(1050,830)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="color0"/>
+    </comp>
+    <comp lib="0" loc="(1050,610)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="color0"/>
+    </comp>
+    <comp lib="0" loc="(1050,520)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="color1"/>
+    </comp>
+    <comp lib="0" loc="(1300,460)" name="Tunnel">
+      <a name="label" val="ScanColorNext"/>
+    </comp>
+    <comp lib="0" loc="(1060,170)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="ready"/>
+    </comp>
+    <comp lib="0" loc="(1050,720)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="color0"/>
+    </comp>
+    <comp lib="0" loc="(1050,400)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Wait_"/>
+    </comp>
+    <comp lib="0" loc="(1300,610)" name="Tunnel">
+      <a name="label" val="UnknowNext"/>
+    </comp>
+    <comp lib="0" loc="(1040,1000)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="timer"/>
+    </comp>
+    <comp lib="0" loc="(1070,210)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Unknow"/>
+    </comp>
+    <comp lib="1" loc="(1160,150)" name="AND Gate">
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="25.01.24 12:45:21"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="758b7c6e-bb82-4dd1-9e7f-64c7cd792e6b"/>
+      <a name="integrity" val="38cf327915f73f4e4e7ef3e7b87f7801923f5168"/>
+    </comp>
+    <comp lib="1" loc="(1100,830)" name="NOT Gate">
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="25.01.24 12:46:02"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="d96ac7d0-4e30-4aa7-b2eb-1f3ff06f0296"/>
+      <a name="integrity" val="6316386ace93763a2be1912bb34f2b50c5c008a3"/>
+    </comp>
+    <comp lib="0" loc="(1300,230)" name="Tunnel">
+      <a name="label" val="WaitNext"/>
+    </comp>
+    <comp lib="1" loc="(1160,310)" name="AND Gate">
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="25.01.24 12:46:45"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="a83442f5-52bc-4f00-b943-33f1cf2f3322"/>
+      <a name="integrity" val="6fdfd9dc2732c8f8586f8cd835228ae89bf814bb"/>
+    </comp>
+    <comp lib="0" loc="(1050,740)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="color1"/>
+    </comp>
+    <comp lib="0" loc="(1080,700)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="ScanColor"/>
+    </comp>
+    <comp lib="0" loc="(1080,810)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="ScanColor"/>
+    </comp>
+    <comp lib="0" loc="(1050,500)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="color0"/>
+    </comp>
+    <comp lib="0" loc="(1040,920)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="timer"/>
+    </comp>
+    <comp lib="1" loc="(1270,980)" name="OR Gate">
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="25.01.24 12:52:30"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="2ab6a202-be85-4a4d-a7bc-0579e20fd453"/>
+      <a name="integrity" val="9066f810c2de7e1f6493a55dd9b383a6c96c5a6a"/>
+    </comp>
+    <comp lib="0" loc="(1050,850)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="color1"/>
+    </comp>
+    <comp lib="1" loc="(1160,500)" name="AND Gate">
+      <a name="inputs" val="3"/>
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="25.01.24 12:46:45"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="6141303e-d4fc-4244-b53c-fe96d3be76ee"/>
+      <a name="integrity" val="ae2471ab12007f5fc207be60a7e3db7a90bdab23"/>
+    </comp>
+    <comp lib="1" loc="(1100,170)" name="NOT Gate">
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="25.01.24 12:46:02"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="fbdd4474-6709-488a-82a1-5b710c478ca4"/>
+      <a name="integrity" val="cb4f853276787a0fed308414bb6c1ea3d2bb5b0f"/>
+    </comp>
+    <comp lib="1" loc="(1160,830)" name="AND Gate">
+      <a name="inputs" val="3"/>
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="25.01.24 12:46:45"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="26a6d310-bc21-4213-a3c1-8b43e3b41884"/>
+      <a name="integrity" val="6873f80ec2efd66e7239b5b416954f47600ef93a"/>
+    </comp>
+    <comp lib="0" loc="(1080,590)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="ScanColor"/>
+    </comp>
+    <comp lib="0" loc="(1050,330)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="timer"/>
+    </comp>
+    <comp lib="0" loc="(1300,720)" name="Tunnel">
+      <a name="label" val="BlueNext"/>
+    </comp>
+    <comp lib="1" loc="(1160,230)" name="AND Gate">
+      <a name="owner" val="gwendal_piemonte"/>
+      <a name="date" val="25.01.24 12:46:45"/>
+      <a name="version" val="2.16.8.t"/>
+      <a name="uuid" val="0969039d-5685-480d-a414-ed2379dbf271"/>
+      <a name="integrity" val="a1c2257aaa9069b26402fef558ae937bae6702af"/>
+    </comp>
+    <comp lib="0" loc="(1030,960)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Blue"/>
     </comp>
     <comp lib="7" loc="(4,50)" name="Text" trackercomp="true">
       <a name="text" val="Attention, votre version de Logisim"/>
@@ -1026,10 +1443,10 @@ end TCL_Generic;
     <wire from="(490,230)" to="(490,260)"/>
     <wire from="(290,120)" to="(330,120)"/>
     <wire from="(400,230)" to="(490,230)"/>
+    <wire from="(540,430)" to="(560,430)"/>
+    <wire from="(540,310)" to="(560,310)"/>
     <wire from="(540,70)" to="(560,70)"/>
     <wire from="(540,190)" to="(560,190)"/>
-    <wire from="(540,310)" to="(560,310)"/>
-    <wire from="(540,430)" to="(560,430)"/>
     <wire from="(540,550)" to="(560,550)"/>
     <wire from="(540,670)" to="(560,670)"/>
     <wire from="(540,790)" to="(560,790)"/>

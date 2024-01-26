@@ -7,7 +7,7 @@ Voici les 4 entrées du système :
 
 - `ready_i` : est à 1 lorsque le bras est prêt à scanner une forme.
 - `color_i` : indique la couleur de la forme scannée et éventuellement si une erreur se produit (table de vérité ci-dessous).
-- `clk_i`   : Signal d'horloge du système.
+- `clk_i`   : Signal d'horloge du système (pas directement utile pour savoir l'état future).
 - `reset_i` : Réinitialisation asynchrone de l'ensemble du système.
 - `timer_i` : Nous allons devoir ajouter cette entrée nous-mêmes elle nous permettra de suivre la progression du bras dans ses déplacements, nous donnant ainsi la possibilité de changer d'état dans certains cas.
 
